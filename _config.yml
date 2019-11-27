@@ -1,4 +1,5 @@
 title: Libsemigroups
 description: Libsemigroups is a C++ library for semigroups and monoids
 theme: jekyll-theme-cayman
-is_project_page: true
+github:
+  repository_url: http://libsemigroups.github.io
