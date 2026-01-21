@@ -6,9 +6,10 @@ weight: 5
 header_menu: true
 ---
 
-In the near future, we aim to provide a [Julia][] package for [libsemigroups][]
-similar to [libsemigroups_pybind11][] providing low-level access.
+A [Julia][] package for [libsemigroups][] similar to [libsemigroups_pybind11][]
+providing low-level access is under development at [Semigroups.jl][].
 
 [libsemigroups]: https://libsemigroups.github.io/libsemigroups/
 [libsemigroups_pybind11]: https://libsemigroups.github.io/libsemigroups_pybind11
 [Julia]: https://julialang.org
+[Semigroups.jl]: https://github.com/libsemigroups/Semigroups.jl
