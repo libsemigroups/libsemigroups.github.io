@@ -1,0 +1,18 @@
+{{ define "main" }}
+<main
+  class="content page-template page-"
+  style="
+    background-image: url('{{ .Params.bgImage }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+  "
+>
+  <style>
+    a:visited {
+      color: #12355b;
+    }
+  </style>
+  <article class="post page">{{ .Content }}</article>
+</main>
+{{ end }}

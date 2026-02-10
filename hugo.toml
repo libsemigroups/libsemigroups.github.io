@@ -22,6 +22,8 @@ font-size = "xs"
 # Theme-specific variables `.Site.Params.myParamName`
 [params]
 
+    bg = 'images/smalloverlap_510x510.png'
+
     # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
     favicon = "images/favicon.png"
 
