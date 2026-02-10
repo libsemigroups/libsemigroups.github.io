@@ -2,7 +2,9 @@
 <main
   class="content page-template page-"
   style="
-    background-image: url('{{ .Params.bgImage }}');
+    {{ with resources.Get .Params.bgImage }}
+    background-image: url('{{ .RelPermalink }}');
+    {{ end }}
     background-size: cover;
     background-position: center;
     background-repeat: repeat-y;
@@ -11,6 +13,11 @@
   <style>
     a:visited {
       color: #12355b;
+    }
+    article {
+      background: #f2efe8;
+      padding-left: 4em;
+      padding-right: 4em;
     }
   </style>
   <article class="post page">{{ .Content }}</article>
