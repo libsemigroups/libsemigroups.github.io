@@ -274,7 +274,7 @@ the [Nielsen-Schreier theorem](https://en.wikipedia.org/wiki/Nielsen%E2%80%93Sch
 states that every subgroup of a free group has a basis. For finitely generated
 subgroups, there exist rather constructive proofs, which lead to algorithms
 for computing the basis explicitly, in the same way that Gaussian elimination
-can be used to can be used to find the basis for a vector space.
+can be used to find the basis for a vector space.
 The goal of this project would be to implement an algorithm for finding the
 free basis of a finitely generated subgroup of a free group.
 
