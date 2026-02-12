@@ -284,7 +284,7 @@ free basis of a finitely generated subgroup of a free group.
 - understanding the algorithmic aspects of certain proofs;
 - implementing an algorithm for the Nielsen-Schreier theorem in C++.
 
-**Mentors**: [Reinis Cirpons][]
+**Mentor**: [Reinis Cirpons][]
 
 **Length**: 175h
 
