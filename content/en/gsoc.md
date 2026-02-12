@@ -51,7 +51,7 @@ and difficulty of the project.
 
 **Description**:
 The goal of this project is to create functioning bindings of the
-[libsemigroups][] library into Julia aspart of the [Semigroups.jl][] project.
+[libsemigroups][] library into Julia as part of the [Semigroups.jl][] project.
 The [libsemigroups_pybind11][] project implements something similar for Python.
 The aim is for [Semigroups.jl][] to expose the low-level functionality of
 [libsemigroups][] to be used as a foundation for a separate higher level
