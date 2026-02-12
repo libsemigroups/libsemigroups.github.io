@@ -160,7 +160,7 @@ based approach.
 **Description**:
 There are a number of high-performance linear algebra packages for linear
 algebra involving matrix and vector manipulation over fields (usually the real
-numbers or finite fields. Some well-known examples among many others are:
+numbers or finite fields). Some well-known examples among many others are:
 [LinBox](https://linalg.org) and [Eigen](https://libeigen.gitlab.io). This
 project will involve implementing (at least some of) the
 [BLAS](https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms)
