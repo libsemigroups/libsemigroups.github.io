@@ -97,3 +97,10 @@ font-size = "xs"
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+# Currently only used in TOC so this hack is ok.
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 3
