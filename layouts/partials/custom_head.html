@@ -1,32 +1,30 @@
 <!-- A partial to be overwritten by the user.
      Its content will appear before the closing </head>-tag -->
 
-
 <!-- Custom CSS via inline styles
      You may use this template to add custom CSS to your site like so: -->
 <style>
-body {
-  font-size: 1.6rem;
-}
-:root {
-  --ul-li-icon: fa-skull-crossbones
-}
+  body {
+    font-size: 1.6rem;
+  }
+  :root {
+    --ul-li-icon: fa-skull-crossbones;
+  }
 
-a {
-  color: #478600;
-}
-a:hover {
-  color: #37501a;
-}
+  a {
+    color: #478600;
+  }
+  a:hover {
+    color: #37501a;
+  }
 
-.dark a {
-  color: #94c4ff;
-}
-.dark a:hover {
-  color: #2b2fec;
-}
-
-.darklinks a {
+  .dark a {
+    color: #94c4ff;
+  }
+  .dark a:hover {
+    color: #2b2fec;
+  }
+  .darklinks a {
     color: #b80135;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -38,20 +36,19 @@ a:hover {
     text-decoration: none;
     position: relative;
     overflow: visible;
-}
-.darklinks a:hover {
+  }
+  .darklinks a:hover {
     color: #ff737e;
-}
+  }
 
-h3 {
+  h3 {
     color: #b80135;
     margin: 10px 0;
     font-size: 3rem;
     letter-spacing: -1px;
     text-shadow: var(--cover-title-text-shadow);
-}
+  }
 </style>
-
 
 <!-- Custom CSS via "custom.css"-file
      If you would rather place your custom CSS into
@@ -68,8 +65,19 @@ h3 {
 <!-- Custom link-tags for different icons
      Generated via https://favicon.io/favicon-generator/ -->
 
-{{ with resources.Get "images/apple-touch-icon.png" }}<link rel="apple-touch-icon" sizes="180x180" href="{{ .RelPermalink }}" />{{ end }}
-{{ with resources.Get "images/favicon.svg" }}<link rel="icon" type="image/svg+xml" href="{{ .RelPermalink }}" />{{ end }}
-{{ range seq 9 4 }}{{ $size := pow 2 . }}{{ $file := replace "images/favicon-##x##.png" "##" $size }}{{ with resources.Get $file }}
-<link rel="icon" type="{{ .MediaType.Type }}" sizes="{{- $size -}}x{{- $size -}}" href="{{ .RelPermalink }}" />{{ end }}{{ end }}
-
+{{ with resources.Get "images/apple-touch-icon.png" }}<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="{{ .RelPermalink }}"
+/>{{ end }} {{ with resources.Get "images/favicon.svg" }}<link
+  rel="icon"
+  type="image/svg+xml"
+  href="{{ .RelPermalink }}"
+/>{{ end }} {{ range seq 9 4 }}{{ $size := pow 2 . }}{{ $file := replace
+"images/favicon-##x##.png" "##" $size }}{{ with resources.Get $file }}
+<link
+  rel="icon"
+  type="{{ .MediaType.Type }}"
+  sizes="{{- $size -}}x{{- $size -}}"
+  href="{{ .RelPermalink }}"
+/>{{ end }}{{ end }}
